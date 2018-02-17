@@ -1,7 +1,5 @@
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { NodeListComponent } from './node-list/node-list.component';
-import { StockListComponent } from './stock-list/stock-list.component';
 
 const appRoutes: Routes = [
   { path: 'nodes', loadChildren: 'app/node/node.module#NodeModule' },

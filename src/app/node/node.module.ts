@@ -1,12 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NodeListComponent } from './node-list/node-list.component';
-import { NodeDetailComponent } from './node-detail/node-detail.component';
+
+import { NodeRoutingModule } from './node-routing.module';
+import { ListComponent } from './list/list.component';
+import { DetailComponent } from './detail/detail.component';
+import { FrameComponent } from './frame/frame.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    NodeRoutingModule
   ],
-  declarations: [NodeListComponent, NodeDetailComponent]
+  declarations: [ListComponent, DetailComponent, FrameComponent]
 })
 export class NodeModule { }
