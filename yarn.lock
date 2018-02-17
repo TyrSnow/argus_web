@@ -8,6 +8,12 @@
   dependencies:
     tslib "^1.7.1"
 
+"@angular/cdk@^5.0.0":
+  version "5.2.1"
+  resolved "http://registry.npm.taobao.org/@angular/cdk/download/@angular/cdk-5.2.1.tgz#11500502deeaf42f88f92ca7d78d9a7642b07761"
+  dependencies:
+    tslib "^1.7.1"
+
 "@angular/cli@1.2.7":
   version "1.2.7"
   resolved "http://registry.npm.taobao.org/@angular/cli/download/@angular/cli-1.2.7.tgz#dd20e8b0da24af5359077c05a6944823cb764132"
@@ -3176,6 +3182,10 @@ mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkd
   dependencies:
     minimist "0.0.8"
 
+moment@^2.18.1:
+  version "2.20.1"
+  resolved "http://registry.npm.taobao.org/moment/download/moment-2.20.1.tgz#d6eb1a46cbcc14a2b2f9434112c1ff8907f313fd"
+
 ms@0.7.1:
   version "0.7.1"
   resolved "http://registry.npm.taobao.org/ms/download/ms-0.7.1.tgz#9cd13c03adbff25b65effde7ce864ee952017098"
@@ -3205,6 +3215,14 @@ ncname@1.0.x:
 negotiator@0.6.1:
   version "0.6.1"
   resolved "http://registry.npm.taobao.org/negotiator/download/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
+
+ng-zorro-antd@^0.6.14:
+  version "0.6.14"
+  resolved "http://registry.npm.taobao.org/ng-zorro-antd/download/ng-zorro-antd-0.6.14.tgz#b9551fe847d7b33669e2a01b7851f46877eda183"
+  dependencies:
+    "@angular/cdk" "^5.0.0"
+    moment "^2.18.1"
+    tslib "^1.7.1"
 
 no-case@^2.2.0:
   version "2.3.2"
