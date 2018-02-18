@@ -1,0 +1,10 @@
+.m-admin {
+  display: flex;
+  align-items: stretch;
+  .content {
+    width: 100%;
+    min-height: 300px;
+    margin: 0 0 0 10px;
+    background: #EEE;
+  }
+}

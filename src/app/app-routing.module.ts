@@ -2,10 +2,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 
 const appRoutes: Routes = [
-  { path: 'nodes', loadChildren: 'app/node/node.module#NodeModule' },
+  { path: 'analysis', loadChildren: 'app/analysis/analysis.module#AnalysisModule' },
   { path: 'stocks', loadChildren: 'app/stock/stock.module#StockModule' },
+  { path: 'user', loadChildren: 'app/user/user.module#UserModule' },
   { path: 'admin', loadChildren: 'app/admin/admin.module#AdminModule' },
-  { path: '',   redirectTo: '/nodes', pathMatch: 'full' },
+  { path: '',   redirectTo: '/analysis', pathMatch: 'full' },
 ];
 
 @NgModule({

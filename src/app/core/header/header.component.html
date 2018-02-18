@@ -1,8 +1,12 @@
 <div class="m-header">
-  <div class="logo"></div>
+  <div class="logo">Argus</div>
   <div class="nav">
-    <a routerLink="/nodes" routerLinkActive="active">节点概览</a>
-    <a routerLink="/stocks" routerLinkActive="active">股票数据</a>
-    <a routerLink="/admin" routerLinkActive="active">管理后台</a>
+    <a class="nav-item" routerLink="/analysis" routerLinkActive="active">结果概览</a>
+    <a class="nav-item" routerLink="/stocks" routerLinkActive="active">股票数据</a>
+    <a class="nav-item" routerLink="/user" routerLinkActive="active">用户中心</a>
+    <a class="nav-item" routerLink="/admin" routerLinkActive="active">管理后台</a>
+  </div>
+  <div class="user">
+    <button nz-button [nzType]="'primary'" nzGhost>登陆</button>
   </div>
 </div>
