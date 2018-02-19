@@ -6,7 +6,8 @@ const appRoutes: Routes = [
   { path: 'stocks', loadChildren: 'app/stock/stock.module#StockModule' },
   { path: 'user', loadChildren: 'app/user/user.module#UserModule' },
   { path: 'admin', loadChildren: 'app/admin/admin.module#AdminModule' },
-  { path: '',   redirectTo: '/analysis', pathMatch: 'full' },
+  { path: 'login', loadChildren: 'app/login/login.module#LoginModule' },
+  { path: '',   redirectTo: '/login', pathMatch: 'full' },
 ];
 
 @NgModule({
