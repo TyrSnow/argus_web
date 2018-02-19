@@ -1,10 +1,17 @@
 .m-admin {
   display: flex;
   align-items: stretch;
-  .content {
+  .container {
     width: 100%;
     min-height: 300px;
     margin: 0 0 0 10px;
-    background: #EEE;
+    .breadcrumb{
+      color: #EEE;
+    }
+    .content{
+      min-height: 400px;
+      background: #EEE;
+      margin-top: 10px;
+    }
   }
 }

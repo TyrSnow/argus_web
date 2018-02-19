@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+.m-admin {
+  /* 覆盖面包屑的样式 */
+  .ant-breadcrumb,
+  .ant-breadcrumb-separator,
+  .ant-breadcrumb-link,
+  .ant-breadcrumb-link a {
+    color: #EEE;
+    margin-bottom: 10px;
+  }
+}

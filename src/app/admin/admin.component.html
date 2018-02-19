@@ -1,7 +1,19 @@
 <div class="m-admin">
   <app-side-bar></app-side-bar>
-  <div>
-    <app-bread-crumb></app-bread-crumb>
-    <div class="content">正文</div>
+  <div class="container">
+    <!-- <app-bread-crumb></app-bread-crumb> -->
+    <nz-card>
+      <ng-template #title>
+        Card title
+      </ng-template>
+      <ng-template #extra>
+        <a>More</a>
+      </ng-template>
+      <ng-template #body>
+        <p>Card content</p>
+        <p>Card content</p>
+        <p>Card content</p>
+      </ng-template>
+    </nz-card>
   </div>
 </div>
