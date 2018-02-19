@@ -1,6 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AdminComponent } from './admin.component';
+import { CommonModule } from '@angular/common';
+import { AdminRoutingModule } from './admin-routing.module';
+import { NgZorroAntdModule } from 'ng-zorro-antd';
 
 describe('AdminComponent', () => {
   let component: AdminComponent;
@@ -8,6 +11,11 @@ describe('AdminComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [
+        CommonModule,
+        AdminRoutingModule,
+        NgZorroAntdModule
+      ],
       declarations: [ AdminComponent ]
     })
     .compileComponents();

@@ -7,7 +7,8 @@ const appRoutes: Routes = [
   { path: 'user', loadChildren: 'app/user/user.module#UserModule' },
   { path: 'admin', loadChildren: 'app/admin/admin.module#AdminModule' },
   { path: 'login', loadChildren: 'app/login/login.module#LoginModule' },
-  { path: '',   redirectTo: '/login', pathMatch: 'full' },
+  { path: 'regist', loadChildren: 'app/regist/regist.module#RegistModule' },
+  { path: '',   redirectTo: '/regist', pathMatch: 'full' },
 ];
 
 @NgModule({
