@@ -1,4 +1,5 @@
 # Argusweb
+[![Build Status](https://www.travis-ci.org/TyrSnow/argus_web.svg?branch=develop)](https://www.travis-ci.org/TyrSnow/argus_web) [![codecov](https://codecov.io/gh/TyrSnow/argus_web/branch/develop/graph/badge.svg)](https://codecov.io/gh/TyrSnow/argus_web)
 计算结果的对外展示页面。
 
 # 1. 词汇
