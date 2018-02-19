@@ -10,5 +10,5 @@ addons:
 install:
   - npm i npminstall && npminstall
 script:
-  - npm run lint
+  - npm run ci
   - npminstall codecov && codecov
