@@ -3,7 +3,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import LoginPage from './login';
 import RegistPage from './regist';
-import Frame from './frame';
+import IndexPage from './index';
+import AdminPage from './admin';
 
 import './App.css';
 
@@ -14,7 +15,8 @@ class App extends Component {
         <Switch>
           <Route path="/login" component={LoginPage} />
           <Route path="/regist" component={RegistPage} />
-          <Route path="/" component={Frame} />
+          <Route path="/admin" component={AdminPage} />
+          <Route path="/" component={IndexPage} />
         </Switch>
       </BrowserRouter>
     );
