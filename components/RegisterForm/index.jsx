@@ -4,19 +4,17 @@ import {
   Input,
   Button,
   Icon,
-  Modal,
 } from 'antd';
 
 const FormItem = Form.Item;
 
-
-class LoginForm extends React.Component {
-  submit = () => {
+class RegistForm extends React.Component {
+  handleRegist = () => {
     this.props.form.validateFields((err, fields) => {
       if (err) {
         return;
       }
-      
+      this.props.onSubmit(fields);
     });
   }
 
@@ -25,7 +23,7 @@ class LoginForm extends React.Component {
     return (
       <Form className="login-form">
         <FormItem>
-          {getFieldDecorator('userName', {
+          {getFieldDecorator('name', {
             rules: [{ required: true, message: 'Please input your username!' }],
           })(
             <Input prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="Username" />
@@ -39,12 +37,20 @@ class LoginForm extends React.Component {
           )}
         </FormItem>
         <FormItem>
+          {getFieldDecorator('confirm', {
+            rules: [{ required: true, message: 'Confirm your Password!' }],
+          })(
+            <Input prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} type="password" placeholder="Password" />
+          )}
+        </FormItem>
+        <FormItem>
           <Button
-            onClick={this.submit}
+            onClick={this.handleRegist}
             type="primary"
+            htmlType="submit"
             className="login-form-button"
           >
-            Log in
+            Regist
           </Button>
         </FormItem>
       </Form>
@@ -52,4 +58,4 @@ class LoginForm extends React.Component {
   }
 }
 
-export default Form.create()(LoginForm);
+export default Form.create()(RegistForm);
