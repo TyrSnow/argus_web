@@ -2,7 +2,6 @@ import { observable, action } from 'mobx';
 import { AUTH_TYPE } from '../constant/auth';
 import * as authService from '../service/auth';
 
-console.debug('AuthStore init.');
 /**
  * 维护当前的登陆状态
  */

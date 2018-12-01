@@ -1,9 +1,16 @@
 import React from 'react';
 import { inject, observer } from 'mobx-react';
 
+import Header from '../../frame/Header';
+import Sider from '../../frame/Sider';
+
+import routes from './routes';
+
 import { AUTH_LABEL } from '../../constant/auth';
 
-@inject('authStore')
+import './index.scss';
+
+@inject('authStore', 'frameStore')
 @observer
 class Index extends React.Component {
   componentDidMount() {
@@ -12,10 +19,16 @@ class Index extends React.Component {
 
   render() {
     console.debug('IndexPage render: ', this.props);
+    const Content = routes.getContent(this.props.frameStore.active);
     return (
-      <div className="p-index">
-        <p>当前登陆用户：{this.props.authStore.name}</p>
-        <p>当前登陆身份：{AUTH_LABEL[this.props.authStore.auth]}</p>
+      <div className="page p-index">
+        <Header />
+        <div className="bottom">
+          <Sider routes={routes} />
+          <div className="content">
+            <Content />
+          </div>
+        </div>
       </div>
     );
   }

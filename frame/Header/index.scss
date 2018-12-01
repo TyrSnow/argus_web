@@ -1,0 +1,28 @@
+.m-header {
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  line-height: 50px;
+  background: #EE5132;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  .logo {
+    width: 200px;
+  }
+  .user {
+    width: 100%;
+    text-align: right;
+    .auth {
+      margin: 0 8px;
+    }
+    .btn {
+      margin: 0 16px;
+      cursor: pointer;
+      transition: color 300ms;
+      &:hover {
+        color: #EAC6BF;
+      }
+    }
+  }
+}

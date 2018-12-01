@@ -20,3 +20,9 @@ export const regist = (name, password) => axios.post('/api/users', {
   name,
   password,
 });
+
+export const validateName = (name) => axios.get('/api/users/names', {
+  params: {
+    name,
+  },
+});

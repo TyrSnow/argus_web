@@ -4,7 +4,6 @@ import Router from 'next/router';
 
 import authStore from '../stores/authStore';
 
-console.debug('_main.js was init');
 autorun(() => {
   axios.defaults.headers.common.authorization = `Bearer ${authStore.token}`;
 });
@@ -31,7 +30,7 @@ axios.interceptors.response.use(
         default:
           return Promise.reject(error.response.data.message ? error.response.data : {
             message: '后台服务不可用',
-          })
+          });
       }
     }
   }

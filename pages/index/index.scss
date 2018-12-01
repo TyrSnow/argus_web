@@ -1,0 +1,15 @@
+.p-index {
+  display: flex;
+  flex-direction: column;
+  .bottom {
+    display: flex;
+    height: 100%;
+    align-items: stretch;
+  }
+  .content {
+    width: 100%;
+    margin: 16px 8px 0;
+    padding: 16px 16px 0;
+    background: #FFF;
+  }
+}
